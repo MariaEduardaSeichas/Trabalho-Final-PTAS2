@@ -70,6 +70,7 @@ app.delete("/livros/:id", async function(req, res) {
   res.json(resultado)
 })
 
+
 app.get("/livros/:id", async function(req, res) {
   var resultado = await livro.findByPk(req.params.id);
   res.send(resultado)
